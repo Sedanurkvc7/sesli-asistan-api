@@ -1,5 +1,5 @@
 # sesli-asistan-api
-# 🎧 Yapay Zeka Destekli Sesli Asistan Mikroservisi
+# Yapay Zeka Destekli Sesli Asistan Mikroservisi
 
 Bu proje, dış aramalarda sesli asistan görevi görecek şekilde tasarlanmış bir mikroservistir. Kullanıcıdan gelen metin (transkript), duygu analizine tabi tutulur ve tespit edilen duyguya uygun bir yanıt üretilerek ses dosyasına dönüştürülür.
 
@@ -53,14 +53,14 @@ Yanıt Üretimi: Yanıt üretimi duygu analizi kısımları daha kolay ve yapay 
 
 TTS: gTTS modülü ile yanıt sesi .mp3 formatında üretildi. 
 
-🚧 Zorlayıcı Noktalar:
+Zorlayıcı Noktalar:
 Türkçe metinlerde duygu analizi her zaman doğru sonuç vermeyebiliyor. Cümleleri ingilizce kullandığımızda duygu analizi daha net yapılabiliyor.Sektörde ve alanda yeni olmamdan kaynaklı olarak biraz genel olarak biraz zorlandım fakat öğrenmeye ve gelişmeye açık biri olarak gerek yapay zeka gerek de diğer kaynaklardan yararlanarak daha emin adımlarla ilereyebildim.
 
 gTTS ile TTS çıktısı alırken dizin oluşturulmadığında hata oluşuyordu. Bu, os.makedirs() ile çözüldü.
 
 Her yanıtın benzersiz ses dosyasına kaydedilmesi gerektiğinden uuid ile dosya isimlendirme yapıldı.
 
-✅ Nasıl Çözüldü?
+Nasıl Çözüldü?
 Yapay zekalardan destek alarak yapıldı kodlar düzenlendi.
 
 TextBlob’ın duygu değerleri incelenerek eşik değerler (polarity > 0.2 / < -0.2) belirlendi.
